@@ -1,7 +1,10 @@
+import { Main } from './shared/components/main'
+import { AntThemeProvider } from './shared/context/AntThemeContext'
+
 export const App = () => {
   return (
-    <div>
-      <div></div>
-    </div>
+    <AntThemeProvider>
+      <Main />
+    </AntThemeProvider>
   )
 }
