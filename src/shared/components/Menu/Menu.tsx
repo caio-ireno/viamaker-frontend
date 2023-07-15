@@ -34,9 +34,7 @@ const ListItemLink: React.FC<ListItemLinkProps> = ({ to, label }) => {
       <Typography
         style={{
           textAlign: 'center',
-          width: '90%',
-
-          color: isActive ? '#5DADE2' : 'inherit',
+          color: isActive ? theme.pathOn : 'inherit',
           fontSize: 20,
         }}
       >
@@ -62,6 +60,7 @@ export const MenuLateral: React.FC<MenuProps> = ({ children }) => {
         style={{
           backgroundColor: theme.primary,
           display: 'flex',
+          justifyContent: 'center',
         }}
         breakpoint="lg"
         collapsedWidth="0"
@@ -73,7 +72,6 @@ export const MenuLateral: React.FC<MenuProps> = ({ children }) => {
             flexDirection: 'column',
             height: '100%',
             alignItems: 'center',
-            width: '100%',
           }}
         >
           <Typography style={{ marginBottom: 20, marginTop: 20, fontSize: 20 }}>
