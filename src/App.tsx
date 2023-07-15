@@ -1,10 +1,15 @@
-import { Main } from './shared/components/main'
+import { BrowserRouter } from 'react-router-dom'
 import { AntThemeProvider } from './shared/context/AntThemeContext'
+import { MenuLateral } from './shared/components/Menu/Menu'
 
 export const App = () => {
   return (
     <AntThemeProvider>
-      <Main />
+      <BrowserRouter>
+        <MenuLateral>
+          <div>oi</div>
+        </MenuLateral>
+      </BrowserRouter>
     </AntThemeProvider>
   )
 }
