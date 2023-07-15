@@ -16,7 +16,7 @@ export const AppRoutes = () => {
       },
       {
         label: 'Produtos',
-        path: '/produtos/',
+        path: '/produtos',
       },
 
       {
