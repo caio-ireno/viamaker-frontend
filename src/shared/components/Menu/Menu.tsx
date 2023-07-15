@@ -91,7 +91,8 @@ export const MenuLateral: React.FC<MenuProps> = ({ children }) => {
         <Content
           style={{
             paddingTop: '50px',
-            paddingLeft: '50px',
+            paddingLeft: '10px',
+            paddingRight: '10px',
             height: '100vh',
             background: theme.secondary,
           }}
