@@ -11,7 +11,7 @@ export const AppRoutes = () => {
   useEffect(() => {
     setDrawerOption([
       {
-        label: 'Inicio',
+        label: 'Início',
         path: '/inicio',
       },
       {
@@ -20,7 +20,7 @@ export const AppRoutes = () => {
       },
 
       {
-        label: 'Usuarios',
+        label: 'Usuários',
         path: '/usuarios',
       },
     ])

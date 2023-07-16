@@ -1,6 +1,10 @@
 export const themeColors = {
-  primary: '#D5F5E3',
+  primary: '#eff0f3',
   secondary: '#fff',
-  button: '#ABEBC6',
-  pathOn: '#239B56',
+  button: '#ff8e3c',
+  pathOn: '#fff',
+  red: '#dc3545',
+  green: '#28a745',
+  yellow: '#ffc107',
+  blue: '#007bff',
 }

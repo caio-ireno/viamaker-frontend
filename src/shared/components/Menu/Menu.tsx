@@ -28,6 +28,7 @@ const ListItemLink: React.FC<ListItemLinkProps> = ({ to, label }) => {
         height: 70,
         marginBottom: 10,
         backgroundColor: theme.button,
+        borderRadius: 10,
       }}
       onClick={handleClick}
     >
