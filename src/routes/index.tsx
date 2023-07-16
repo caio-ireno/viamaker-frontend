@@ -24,7 +24,7 @@ export const AppRoutes = () => {
         path: '/usuarios',
       },
     ])
-  }, [])
+  }, [setDrawerOption])
 
   return (
     <Routes>

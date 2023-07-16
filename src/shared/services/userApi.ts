@@ -1,8 +1,8 @@
-import { Api } from "./axios"
+import { Api } from './axios'
 
 export interface UsuarioProps {
-  _id: number;
-  nome: string;
+  _id: number
+  nome: string
 }
 
 const getAll = async (): Promise<UsuarioProps[]> => {
@@ -11,12 +11,11 @@ const getAll = async (): Promise<UsuarioProps[]> => {
     const { data } = await Api.get(urlRelativa)
     console.log(data)
     return data
-
   } catch (error) {
     console.error(error)
     throw new Error(
       (error as { message: string }).message || 'Erro ao Carregar',
-    );
+    )
   }
 }
 
