@@ -41,7 +41,10 @@ export const Inicio = () => {
       }}
     >
       <Title level={2}>Página Inicial</Title>
-      <Row style={{ width: '100%' }} justify="space-evenly">
+      <Row
+        style={{ width: '100%', display: 'flex', gap: 10 }}
+        justify="space-evenly"
+      >
         <Col
           style={{
             backgroundColor: theme.primary,
@@ -50,7 +53,9 @@ export const Inicio = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}
-          span={10}
+          xs={24}
+          sm={20}
+          md={10}
         >
           <Title level={3}>Total de Produtos</Title>
           <Title level={3}>{countProduto}</Title>
@@ -63,7 +68,9 @@ export const Inicio = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}
-          span={10}
+          xs={24}
+          sm={20}
+          md={10}
         >
           <Title level={3}>Total de Usuários</Title>
           <Title level={3}>{countUsuario}</Title>
