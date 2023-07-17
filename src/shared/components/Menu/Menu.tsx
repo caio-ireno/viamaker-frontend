@@ -2,7 +2,7 @@ import { Layout, Typography } from 'antd'
 import { useMatch, useNavigate } from 'react-router-dom'
 import { useDrawerContext } from '../../context/MenuOption'
 import { AntThemeContext } from '../../context/AntThemeContext'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 
 interface ListItemLinkProps {
   label: string
@@ -52,8 +52,10 @@ interface MenuProps {
 }
 
 export const MenuLateral: React.FC<MenuProps> = ({ children }) => {
-  const { drawerOptions } = useDrawerContext()
+  const [collapsed, setCollapsed] = useState(false)
 
+  const { drawerOptions } = useDrawerContext()
+  console.log(collapsed)
   const theme = useContext(AntThemeContext)
   return (
     <Layout style={{ display: 'flex' }}>
@@ -62,7 +64,17 @@ export const MenuLateral: React.FC<MenuProps> = ({ children }) => {
           backgroundColor: theme.primary,
           display: 'flex',
           justifyContent: 'center',
+          ...(collapsed
+            ? {
+                position: 'fixed',
+                zIndex: 1,
+                height: '100%',
+              }
+            : null),
         }}
+        onBreakpoint={broken =>
+          broken ? setCollapsed(true) : setCollapsed(false)
+        }
         breakpoint="lg"
         collapsedWidth="0"
         zeroWidthTriggerStyle={{ top: 0 }}

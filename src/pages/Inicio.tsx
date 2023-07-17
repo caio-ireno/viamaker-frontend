@@ -57,8 +57,9 @@ export const Inicio = () => {
           sm={20}
           md={10}
         >
-          <Title level={3}>Total de Produtos</Title>
-          <Title level={3}>{countProduto}</Title>
+          <Title style={{ margin: 10 }} level={3}>
+            Total de Produtos: {countProduto}
+          </Title>
         </Col>
         <Col
           style={{
@@ -72,8 +73,9 @@ export const Inicio = () => {
           sm={20}
           md={10}
         >
-          <Title level={3}>Total de Usuários</Title>
-          <Title level={3}>{countUsuario}</Title>
+          <Title style={{ margin: 10 }} level={3}>
+            Total de Usuários: {countUsuario}
+          </Title>
         </Col>
       </Row>
     </div>

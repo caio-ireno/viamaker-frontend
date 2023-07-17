@@ -21,7 +21,14 @@ export const Usuarios = () => {
   }, [])
 
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+      }}
+    >
       <Title level={2}>Usuarios</Title>
       <Row
         style={{ padding: 0, display: 'flex', gap: 5, width: '100%' }}
@@ -37,7 +44,7 @@ export const Usuarios = () => {
               alignItems: 'center',
               justifyContent: 'center',
             }}
-            span={24}
+            span={20}
             key={row._id}
           >
             <Title style={{ textAlign: 'center' }} level={3}>
