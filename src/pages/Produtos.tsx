@@ -33,7 +33,7 @@ export const Produtos = () => {
       <Title level={2}>Produtos</Title>
       <Row
         style={{ padding: 0, display: 'flex', gap: 5, width: '100%' }}
-        justify="space-evenly"
+        justify="space-around"
       >
         {rows.map(row => (
           <Col
@@ -46,10 +46,8 @@ export const Produtos = () => {
               justifyContent: 'center',
             }}
             xs={20}
-            sm={16}
-            md={12}
-            lg={8}
-            xl={4}
+            sm={20}
+            md={7}
             key={row._id}
           >
             <Title style={{ textAlign: 'center' }} level={3}>

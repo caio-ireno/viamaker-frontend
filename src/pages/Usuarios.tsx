@@ -29,7 +29,7 @@ export const Usuarios = () => {
         width: '100%',
       }}
     >
-      <Title level={2}>Usuarios</Title>
+      <Title level={2}>Usuários</Title>
       <Row
         style={{ padding: 0, display: 'flex', gap: 5, width: '100%' }}
         justify="space-evenly"
