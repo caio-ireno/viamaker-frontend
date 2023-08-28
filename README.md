@@ -1,11 +1,19 @@
-# Run Project
+# Viamaker Frontend Test
 
-Rode o comando `npm start`.
+This is a project created for a front end test.
 
-# Theme Context
+## Installation
 
-Foi criado um contexto para lidar com o tema do projeto pensando em escalabilidade. É possivel implementar uma logica junto com um Toggle, para alterar o tema entre modo claro e escuro, assim como outras funcionalidades.
+Use the package manager [npm](https://www.npmjs.com/package/npm) to install this application.
 
-# Menu Context
+```bash
+npm install
+```
 
-Foi criado um context para lidar com as rotas do menu lateral.
+## Usage
+
+Run:
+
+```bash
+npm start
+```
