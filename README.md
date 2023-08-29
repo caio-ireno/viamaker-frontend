@@ -1,6 +1,6 @@
 # Viamaker Front end
 
-Welcome to the Viamaker Front end Test project! This repository contains a frontend application built with modern web technologies to showcase a user-friendly interface. This README will guide you through the setup, usage, and available scripts of the project.
+Welcome to the Viamaker Frontend test! This repository contains the frontend application built with modern web technologies to showcase a user-friendly interface. The backend for this project can be found in the [Viamaker Test Backend Repository](https://github.com/caio-ireno/viamaker-api). This README will guide you through the setup, usage, and available scripts of the frontend project.
 
 ## Table of Contents
 
